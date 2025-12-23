@@ -7,5 +7,4 @@ app = Flask(__name__)
 def hello_world():
     return render_template("index.html")
     # function to handle requests to the root URL and render the index.html template
-
 app.run(debug=True)  # run the app in debug mode
