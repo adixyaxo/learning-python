@@ -25,3 +25,17 @@ def factorial(n):
         return n * factorial(n - 1)
     
 print(factorial(5))  # Output: 120
+
+def fibonacci(n):
+    # This function returns the nth Fibonacci number using recursion
+    if n <= 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+    
+print(fibonacci(7))  # Output: 13 
+# Note: Recursive functions can be less efficient for large inputs due to repeated calculations.
+# you must have a base case to prevent infinite recursion.
+
