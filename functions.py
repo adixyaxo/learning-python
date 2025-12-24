@@ -15,3 +15,13 @@ print(sum(3, 7))  # Output: 10
 # They are often used in situations where a simple function is needed for a short period of time,
 # such as in higher-order functions like map(), filter(), and reduce().It preserves the formatting,
 # including line breaks and indentation.
+
+# recursion
+def factorial(n):
+    # This function calculates the factorial of a number using recursion
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+    
+print(factorial(5))  # Output: 120
