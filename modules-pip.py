@@ -17,3 +17,4 @@ print(math.comb(5, 2))
 print(math.perm(5, 2))
 
 # there are more built in modules in python like os, sys, datetime, random, json, re, subprocess, threading etc. which you can explore in the documentation. https://docs.python.org/3/library/
+# https://docs.python.org/3/py-modindex.html
