@@ -1,5 +1,5 @@
 import math
-
+import mymodule
 print(math.sqrt(16))  # Output: 4.0
 print(math.factorial(5))  # Output: 120
 print(math.pow(2, 3))  # Output: 8.0
@@ -16,5 +16,14 @@ print(math.isqrt(20))
 print(math.comb(5, 2))
 print(math.perm(5, 2))
 
+
 # there are more built in modules in python like os, sys, datetime, random, json, re, subprocess, threading etc. which you can explore in the documentation. https://docs.python.org/3/library/
 # https://docs.python.org/3/py-modindex.html
+
+# importing custom module
+print(mymodule.greet("Alice"))  # Output: Hello, Alice!
+
+#  external modules can be installed using pip install requests
+import requests
+response = requests.get('https://google.com')
+print(response.status_code)  # Output: 200
