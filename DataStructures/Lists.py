@@ -6,8 +6,8 @@ print(marks[2:4]) #slicing of lists
 
 
 # list meathords
-marks.append(600) #add item at the end
-marks.insert(2,450) #add item at specific index
+marks.append(600) #add item at the END
+marks.insert(2,450) #add item at specific index ##IMPORTANT
 marks.remove(1) #remove specific item
 marks.pop() #remove last item
 marks.sort() #sort the list
