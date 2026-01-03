@@ -14,3 +14,9 @@ def say_hello():
 
 say_hello()
 decorator(say_hello)
+
+print(" or we can also do is" )
+
+@decorator
+def say_hello():
+    print("Hello")

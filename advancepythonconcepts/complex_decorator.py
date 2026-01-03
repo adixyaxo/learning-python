@@ -1,3 +1,6 @@
+# this concept will create new function with old
+
+
 def say_hello():
     print("Hello")
     
