@@ -85,3 +85,38 @@ a.description()
 
 print(mathulits.add(10,11))
 mathulits.description()
+
+print("\n---\n")
+
+class book :
+    def __init__(self,title,author,length):
+        self.title = title
+        self.author = author
+        self.length = length
+        
+    def __str__(self):
+        return f"{self.title} written by {self.author}"
+        
+    def __len__(self):
+        return self.length
+        
+b = book("Clean Code","Aditya Dagar",1000)
+print(str(b))
+print(len(b))
+
+print("\n---\n")
+class NegetiveNumberError(Exception):
+    pass
+
+try:
+    number = int(input("Enter any number ::"))
+    divisor = int(input("Enter divisor ::"))
+    
+    if number < 0 or divisor < 0 :# the raising of the error must be done in a try block 
+        raise NegetiveNumberError("Number cannot be negetive")
+    
+    print(number/divisor)
+except ValueError as e:
+    print("The input is not a number")
+except ZeroDivisionError as e:
+    print("You cannot perform division by zero")

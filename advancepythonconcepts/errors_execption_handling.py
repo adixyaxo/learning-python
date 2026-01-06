@@ -24,3 +24,10 @@ def add (): #if only there is a function we can return value in the execption bl
             
         if a==0 & b==0:
             raise ValueError ("Dont waste the time adding to zeros") #this is made to raise an error and crash a programme on purpose
+        
+#IMPORTANT IMPORTANT IMPORTANT 
+# for creating custom errors we do this 
+class NegetiveNumberError(Exception):
+    pass
+
+# after doing this we have sucessfully created a new error called NegetiveNumberError
