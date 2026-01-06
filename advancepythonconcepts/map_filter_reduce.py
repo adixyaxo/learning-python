@@ -1,0 +1,1 @@
+# map filter and reduce are higher order functions in python
