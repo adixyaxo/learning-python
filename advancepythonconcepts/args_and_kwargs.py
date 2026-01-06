@@ -15,3 +15,10 @@ def sum_args(*args): # args is a tuple of arguments
     return total
 
 print(sum_args(1,2,3,4,5,6,7,8,9,10)) # passing multiple arguments to the function
+
+
+def marks(**kwargs): # kwargs is a dictionary of keyword arguments
+    for key, value in kwargs.items():
+        print(f"The marks of {key} are {value}")
+        
+marks(math=90, science=85, english=88 , hindi=92) # passing multiple keyword arguments to the function
