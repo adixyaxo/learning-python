@@ -21,4 +21,15 @@ def marks(**kwargs): # kwargs is a dictionary of keyword arguments
     for key, value in kwargs.items():
         print(f"The marks of {key} are {value}")
         
+    
 marks(math=90, science=85, english=88 , hindi=92) # passing multiple keyword arguments to the function
+
+# if you want to use both *args and **kwargs in a function you can do it like this
+def combined_function(*args, **kwargs):
+    total = 0
+    for items in args:
+        total += items
+    print(f"The total of args is {total}")
+    for key, value in kwargs.items():
+        print(f"The value of {key} is {value}")
+# but there is a condition to it you have to pass *args first and then **kwargs
