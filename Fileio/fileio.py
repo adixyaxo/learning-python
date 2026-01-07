@@ -23,3 +23,14 @@ hahahahhahah
 jhon_doe.write(string_)
 
 jhon_doe.close()
+
+# for appending data 
+
+jhon_doe = open("jhon_doe","a")
+
+jhon_doe.write('''I am apending this data to jhon doe file lets see the results
+               of 
+               appending
+               the 
+               data
+               ''')
