@@ -10,3 +10,16 @@ content = a_file.read()
 print(content)
 
 a_file.close()
+
+# for writing do following 
+
+jhon_doe = open("jhon_doe","w")
+
+string_ = '''This is a multi line string which i am going to write in jhon_doe.txt 
+Hi i am jhon the don
+hahahahhahah
+'''
+
+jhon_doe.write(string_)
+
+jhon_doe.close()
