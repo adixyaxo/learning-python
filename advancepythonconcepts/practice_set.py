@@ -120,3 +120,63 @@ except ValueError as e:
     print("The input is not a number")
 except ZeroDivisionError as e:
     print("You cannot perform division by zero")
+
+
+print("\n---\n")
+
+# map filter and reduce 
+
+list1 = [1,2,3,4,5,6,7,8,9,10]
+
+cube = map(lambda x : x*x*x ,list1)
+
+print(list(cube))
+
+def evennumbers(x):
+    if x % 2 == 0:
+        return True
+    else:
+        return False
+    
+even = filter(evennumbers,list1)
+
+print(list(even))
+
+from functools import reduce
+
+def multipy(x,y):
+    return x*y
+
+print(x := reduce(multipy,list1))
+
+print("\n---\n")
+
+listwords = []
+while True:
+    if (x:=input("Enter the text you want to print :")) != "quit":
+        if len(x) >= 4:
+            listwords.append(x)
+        print(x)
+    else:
+        break
+print(listwords)
+    
+print("\n---\n")
+
+def sum_all(*args):
+    total = 0
+    for items in args:
+        total += items
+    return total
+
+print(sum_all(10,11,12,13,15,17,19,10))
+
+def print_details(**dt):
+    for key,value in dt.items():
+        print(f"{key} : {value}")
+    
+print_details(name="Alice", age=25, city="Delhi")
+# Output:
+# name: Alice
+# age: 25
+# city: Delhi
