@@ -1,5 +1,7 @@
 import argparse
 
+# look at the documentation for more information of this module
+
 parser = argparse.ArgumentParser(description='simple calculator')
 
 parser.add_argument("num1",type = float, help="first number")
